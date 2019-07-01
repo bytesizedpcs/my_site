@@ -1,0 +1,57 @@
+@font-face {
+	font-family: "SF Mono";
+	src: url("./SFMono-Regular.otf");
+}
+
+@font-face {
+	font-family: "SF Mono Light";
+	src: url("./SFMono-Light.otf");
+}
+
+@font-face {
+	font-family: "SF Mono Semibold";
+	src: url("./SFMono-Semibold.otf");
+}
+
+:root {
+	--main-font-size: 12px;
+	--main-bg-color: #ededed;
+	--main-fg-color: #191919;
+	--fg-lighter-color: #757575;
+}
+
+body {
+	margin: 0;
+	font-family: 'SF Mono', Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-size: var(--main-font-size);
+	background-color: var(--main-bg-color);
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/* margin: 0 0 0.5em 0; */
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+a {
+	color: inherit;
+}
+
+code {
+	font-family: menlo, inconsolata, monospace;
+	font-size: calc(1em - 2px);
+	color: #555;
+	background-color: var(--main-bg-color);
+	padding: 0.2em 0.4em;
+	border-radius: 2px;
+}
+
+@media (min-width: 400px) {
+	body {
+		font-size: 16px;
+	}
+}
